@@ -155,7 +155,9 @@ print("\nAufgabe 18\n")
 a = 5
 b = 3.14
 result = f"a = {a}, b = {b}"    # Formatierter String (f- String)
+result1 = "a = {}, b = {}".format(a,b)
 print(result)
+print(result1)
 
 
 # 19. Gebe den Absolutwert eines negativen `int`-Wertes aus:
