@@ -9,6 +9,7 @@ a = 5
 b = 10
 result = a + b
 print(result)
+print(5+10)
 
 
 # 2. Subtrahiere zwei `float`-Werte und gebe das Ergebnis aus:
@@ -36,7 +37,7 @@ a = 10
 b = 2
 result = a / b 
 print(result)
-print(type(a))  # Das Ergebnis der Division ist vom Typ 'float'.
+print(type(result))  # Das Ergebnis der Division ist vom Typ 'float'.
 
 
 # 5. Mache eine ganzzahlige Division von zwei `int`-Werte und gebe das Ergebnis aus:
@@ -48,7 +49,7 @@ result = a // b     # Operator für ganzzahlige Division.
 result = int(a / b) # Alternativ: Dividieren und anschließend in einen Integer umwandeln.
 print(result)
 
-print(int(1.9999))   # Wird zu 2 bei 16 Nachkommastellen auf 9.
+print(int(1.9999_9999_9999_9999))   # Wird zu 2 bei 16 Nachkommastellen auf 9.
 
 # 6. Ermittle den Rest einer Division (Modulo) von zwei `int`-Werten:
 print("\nAufgabe 6\n")
@@ -168,8 +169,10 @@ print(result)
 # 20. Runde einen `float`-Wert auf zwei Nachkommastellen:
 print("\nAufgabe 20\n")
 
-x = 32.14159
-result = round(x, 2)   # round() = Python Builtin- Funktion
+x = 35.14159
+#result = round(x, 1)   # round() = Python Builtin- Funktion
+#print(result)
+result = round(x,-1)
 print(result)
 
 
@@ -218,7 +221,7 @@ print(result)
 # 24. **Bitweise Operatoren** Ver-NOT-e einen `int`-Werte:
 print("\nAufgabe 24\n")
 
-a = 5  
+a = -5  
 result = ~a
 print(result)
 
@@ -230,11 +233,12 @@ print(result)
 print("\nAufgabe 25\n")
 
 a = 5  # 0101 in binär
-result = a << 1 
+result = a << 2 
 print(result)   
 # 0101 -> 1010 = 10
 
-result = a >> 1
+b = 5
+result = b >> 1
 print(result)
 # 0101 -> 0010 = 2
 
