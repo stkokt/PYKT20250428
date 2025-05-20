@@ -137,6 +137,11 @@ else:
 
 print("\nAufgabe 13\n")
 
+import random
+lostrommel = [n for n in range(1,50)]   # Liste 1 - 49
+tippschein = [3,20,46,7,33,15]          # fester Tippschein
+ziehung = random.sample(lostrommel, 6)  # Simulierte Ziehung
+
 # Zähler für die Gewinner
 
 cnt3er = 0
@@ -144,7 +149,7 @@ cnt4er = 0
 cnt5er = 0
 cnt6er = 0
 
-for ziehungen in range(5_000_000):  # 1_000_000 Ziehungen, wir wollen mal nicht übertreiben ;)
+for ziehungen in range(5_000_000):  # 5_000_000 Ziehungen, wir wollen mal nicht übertreiben ;)
     treffer_cnt = 0                 # Treffercounter wird bei jedem Loop zurückgesetzt.
     ziehung = random.sample(lostrommel, 6)  # Zufalls- Sample aus 1 - 49
     for lottozahl in ziehung:       # Vergleich mit Tippschein
