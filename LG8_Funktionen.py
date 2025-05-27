@@ -114,16 +114,16 @@ def größteteiler(zahl:int)->int:
     for digit in range(zahl//2,0,-1):
         if zahl%digit==0:
             #print(digit)
-            break
-    return digit
+            #break
+            return digit
 
 import time
 
 # Zeitmessung beider Varianten
 t1=time.time()
-maxDivisor1(1200015011)
+print(maxDivisor1(120001501))
 t2=time.time()
-größteteiler(1200015011)
+print(größteteiler(120001501))
 t3=time.time()
 
 print(f"Stefan: {t2-t1}, Alireza: {t3-t2}")
@@ -240,7 +240,7 @@ def pwgenSimple(pwLength:int, ausschluss:str="")->str:
     from string import ascii_lowercase, ascii_uppercase, digits, punctuation
     from random import sample 
     pwPool=list(set(ascii_lowercase + ascii_uppercase + digits + punctuation) - set(ausschluss))
-    # print(sorted(pwPool))     # nur einkommentieren, um den Zeichenpool zu sehen
+    print(sorted(pwPool))     # nur einkommentieren, um den Zeichenpool zu sehen
     return "".join(sample(pwPool, pwLength))    # Sampleliste wird in einen leeren String gejoint
 
 #print(pwgenSimple(20))
@@ -264,4 +264,4 @@ def pwgenPro(lows:int, caps:int, nums:int, specs:int=0, ausschluss:str="")->str:
     shuffle(pw)
     return "".join(pw)
 
-print(pwgenPro(2,3,4,4,";.@A12"))
+print(pwgenPro(2,3,4,4,";.@a12"))
