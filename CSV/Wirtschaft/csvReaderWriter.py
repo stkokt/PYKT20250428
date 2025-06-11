@@ -29,14 +29,14 @@ splittedDataset = []
 for dataset in dataErwerb:
     splittedDataset.append(dataset[0].split(";"))
 
-print(splittedDataset)
+#print(splittedDataset)
 
 anteil_LFF = []
 
 for dataset in splittedDataset:
     anteil_LFF.append([dataset[0],round((float(dataset[2])/float(dataset[1])),2)])
 
-print(anteil_LFF)
+#print(anteil_LFF)
 
 # Einlesen einer CSV-Datei mit csv.reader
 with open("Erwerbstaetige1.csv", mode='r', newline='') as csvfile:
@@ -89,10 +89,11 @@ wr3 = [ds[1] for ds in ratioLebensmittel]
 wr4 = [ds[1] for ds in ratioWohnen]
 wr5 = [ds[1] for ds in ratioNettoBrutto]
 
+#print(wr1)
 ratios = list(zip(jahre, wr1, wr2, wr3, wr4, wr5))
 
-print(ratios)
-print(jahre)
+#print(ratios)
+#print(jahre)
 #print("Ratios",wirtschaft_ratio)
 # Schreiben über csv.writer
 

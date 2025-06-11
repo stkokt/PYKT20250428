@@ -13,7 +13,7 @@ cursor = conn.cursor()
 # Tabellen erstellen
 def create_tables():
     cursor.execute('''
-    CREATE TABLE IF NOT EXISTS Wirtschaftsleistung (
+    CREATE TABLE IF NOT EXISTS Erwerbstaetige (
         "ID" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
         "Jahr" INTEGER NOT NULL,
         "Insgesamt" REAL NOT NULL,
@@ -30,7 +30,7 @@ def create_tables():
 
 # Daten einfügen
 def insert_data():
-    # Daten in die Tabelle Wirtschaftsleistung einfügen
+    # Daten in die Tabelle Erwerbstaetige einfügen
     data_to_insert = [
         (row['Jahr'], 
          row['Insgesamt'], 
@@ -45,7 +45,7 @@ def insert_data():
     ]
 
     cursor.executemany('''
-    INSERT INTO Wirtschaftsleistung (Jahr, Insgesamt, LandForstFisch, ProdAll, ProdBau, DienstAll, HandelVerkehrGast, InformFinanzVermietUnternehmdienst, OeffentSonstDienst)
+    INSERT INTO Erwerbstaetige (Jahr, Insgesamt, LandForstFisch, ProdAll, ProdBau, DienstAll, HandelVerkehrGast, InformFinanzVermietUnternehmdienst, OeffentSonstDienst)
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     ''', data_to_insert)
 
@@ -53,16 +53,16 @@ def insert_data():
 
 # Daten abfragen
 def select_data():
-    cursor.execute('SELECT * FROM Wirtschaftsleistung')
-    wirtschaftsleistung = cursor.fetchall()
-    print("Wirtschaftsleistung:")
-    for row in wirtschaftsleistung:
+    cursor.execute('SELECT * FROM Erwerbstaetige')
+    erwerbstaetige = cursor.fetchall()
+    print("Erwerbstaetige:")
+    for row in erwerbstaetige:
         print(row)
 
 # Daten aktualisieren
 def update_data():
     cursor.execute('''
-    UPDATE Wirtschaftsleistung
+    UPDATE Erwerbstaetige
     SET Insgesamt = 3700.7
     WHERE Jahr = 2021
     ''')
@@ -75,9 +75,9 @@ if __name__ == "__main__":
         insert_data()
         print("Daten nach dem Einfügen:")
         select_data()
-        update_data()
-        print("\nDaten nach dem Aktualisieren:")
-        select_data()
+        # update_data()
+        # print("\nDaten nach dem Aktualisieren:")
+        # select_data()
     except Exception as e:
         print(f"Ein Fehler ist aufgetreten: {e}")
     finally:
