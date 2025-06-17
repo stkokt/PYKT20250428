@@ -1,0 +1,11 @@
+Aufgabenreihenfolge:
+
+1)  durchschnitt.py
+2)  flaecheninhalt1.py
+3)  flaecheninhalt2.py
+4)  flaecheninhalt3.py
+5)  rechner.py
+6)  nachname1.py
+7)  nachname2.py
+8)  kundendaten1.py
+9)  kundendaten2.py

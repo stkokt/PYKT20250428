@@ -8,8 +8,8 @@ Max;34;Hamburg
 Lisa;23;München
 """
 
-# with open("personen.csv",'w') as csv_datei:
-#     csv_datei.write(csv_daten)
+with open("personen.csv",'w') as csv_datei:
+    csv_datei.write(csv_daten)
 
 with open('personen.csv', 'r') as csv_datei:
     csv_leser = csv.reader(csv_datei)
