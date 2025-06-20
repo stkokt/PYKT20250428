@@ -12,7 +12,7 @@ class Person():
           print("Schnauf")
      def Geburtstag(self):
           self.alter +=1
-     def __add__(self, other): # Operator +
+     def __add__(self, other:'Person'): # Operator +
           return (self.alter + other.alter)/2
      def __gt__(self,other):   # Operator  >
           return self.alter > other.alter

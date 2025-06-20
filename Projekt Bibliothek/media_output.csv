@@ -1,0 +1,41 @@
+ID;Typ;Autor;Titel;Status;Rueckgabe;LetzterNutzer
+978-3-16-148410-0;Buch;Stefan Zweig;Die Welt von Gestern;verfügbar;;LR-Q2-2001
+978-3-423-12345-6;Buch;Thomas Mann;Der Zauberberg;verliehen;2025-06-15;AS-Q4-2000
+978-3-596-29490-1;Buch;Hermann Hesse;Siddhartha;verfügbar;;MM-Q3-2000
+978-3-442-73456-7;Buch;Franz Kafka;Der Prozess;verliehen;2025-06-10;PM-Q2-2000
+978-3-257-23456-8;Buch;Friedrich Nietzsche;Also sprach Zarathustra;verfügbar;;LW-Q3-2000
+978-3-15-009999-9;Buch;Bertolt Brecht;Die Dreigroschenoper;verliehen;2025-06-20;LR-Q1-2001
+978-3-458-34567-8;Buch;Theodor Fontane;Effi Briest;verfügbar;;TB-Q2-2000
+978-3-463-45678-9;Buch;Johann Wolfgang von Goethe;Faust;verfügbar;;SS-Q3-2000
+978-3-426-56789-0;Buch;Friedrich Schiller;Die Räuber;verliehen;2025-06-05;LR-Q2-2001
+978-3-499-67890-1;Buch;E.T.A. Hoffmann;Der Sandmann;verfügbar;;DW-Q3-2000
+977-1234-56789-0;Zeitschrift;Verschiedene;Der Spiegel;verfügbar;;LR-Q2-2001
+977-2345-67890-1;Zeitschrift;Verschiedene;National Geographic;verfügbar;2025-06-12;AS-Q3-2000
+977-3456-78901-2;Zeitschrift;Verschiedene;Focus;verfügbar;;LR-Q2-2001
+977-4567-89012-3;Zeitschrift;Verschiedene;Stern;verliehen;2025-06-18;PM-Q4-2000
+977-5678-90123-4;Zeitschrift;Verschiedene;Geo;verfügbar;;LR-Q2-2001
+977-6789-01234-5;Zeitschrift;Verschiedene;Zeit Wissen;verfügbar;;TB-Q2-2000
+977-7890-12345-6;Zeitschrift;Verschiedene;Spektrum der Wissenschaft;verliehen;2025-06-20;LR-Q4-2001
+977-8901-23456-7;Zeitschrift;Verschiedene;PM;verfügbar;;LR-Q2-2001
+977-9012-34567-8;Zeitschrift;Verschiedene;Mare;verfügbar;;DW-Q3-2000
+977-0123-45678-9;Zeitschrift;Verschiedene;Brigitte;verliehen;2025-06-25;LR-Q2-2001
+5012345678901;CD;Beethoven;Symphonien;verfügbar;;LR-Q2-2001
+5023456789012;CD;Mozart;Klavierkonzerte;verliehen;2025-06-14;AS-Q4-2000
+5034567890123;CD;Bach;Brandenburgische Konzerte;verfügbar;;LR-Q2-2001
+5045678901234;CD;Brahms;Ungarische Tänze;verliehen;2025-06-16;PM-Q4-2000
+5056789012345;CD;Schubert;Winterreise;verfügbar;;LR-Q2-2001
+5067890123456;CD;Chopin;Nocturnes;verfügbar;;TB-Q2-2000
+5078901234567;CD;Tchaikovsky;Schwanensee;verliehen;2025-06-19;LR-Q2-2001
+5089012345678;CD;Vivaldi;Die vier Jahreszeiten;verfügbar;;LR-Q4-2001
+5090123456789;CD;Handel;Messiah;verfügbar;;JH-Q4-2000
+5001234567890;CD;Haydn;Die Schöpfung;verliehen;2025-06-21;LR-Q2-2001
+4001234567890;DVD;Christopher Nolan;Inception;verfügbar;;LR-Q4-2001
+4002345678901;DVD;Quentin Tarantino;Pulp Fiction;verliehen;2025-06-13;MM-Q3-2000
+4003456789012;DVD;Stanley Kubrick;2001: Odyssee im Weltraum;verfügbar;;LR-Q2-2001
+4004567890123;DVD;Martin Scorsese;The Departed;verliehen;2025-06-17;LW-Q3-2000
+4005678901234;DVD;Francis Ford Coppola;Der Pate;verfügbar;;LR-Q2-2001
+4006789012345;DVD;Steven Spielberg;Schindlers Liste;verfügbar;;SS-Q3-2000
+4007890123456;DVD;Ridley Scott;Blade Runner;verliehen;2025-06-23;LR-Q2-2001
+4008901234567;DVD;Alfred Hitchcock;Psycho;verfügbar;;LR-Q2-2001
+4009012345678;DVD;James Cameron;Titanic;verfügbar;;LR-Q2-2001
+4010123456789;DVD;Peter Jackson;Der Herr der Ringe: Die Rückkehr des Königs;verfügbar;;JH-Q4-2000
