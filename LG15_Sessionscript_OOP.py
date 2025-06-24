@@ -12,7 +12,7 @@ class Person():
           print("Schnauf")
      def Geburtstag(self):
           self.alter +=1
-     def __add__(self, other:'Person'): # Operator +
+     def __add__(self, other): # Operator +
           return (self.alter + other.alter)/2
      def __gt__(self,other):   # Operator  >
           return self.alter > other.alter
@@ -23,8 +23,7 @@ class Person():
      def __lt__(self,other):   # Operator  <
           return self.alter < other.alter
 
-     
-    
+         
 Stefan = Person("Stefan", 55, "m") # wird instanziiert und atmet (Zeile 9!)
 Stefan.name = "Stefan"
 print(Stefan.name, Stefan.alter)
@@ -35,11 +34,12 @@ Stefan.Atmen()
 # vererbenden Klasse Person, überschreibt aber die
 # Methode Atmen() und das Attribut 'sex'
 class Mann(Person):
-    Person.sex = "m"
+    def __init__(self, name, age):
+        super().__init__(name, age, sex="m")
     def Atmen(self):
         print("Schnuff") 
 
-Wasim = Mann("Wasim", 30, "m")
+Wasim = Mann("Wasim", 30)
 print(Wasim.name, Wasim.sex)
 Wasim.Atmen()
 # Wasim hat Geburtstag und wird ein Jahr älter
@@ -57,5 +57,4 @@ Baby2 = Person("Attila", sex = "m")
 print(Baby2.name, Baby2.sex)
 
 Baby3 = Person("Merlin", age=300)
-print(Baby2.name, Baby2.alter)
-
+print(Baby2.name, Baby2.alter) 

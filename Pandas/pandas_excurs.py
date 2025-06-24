@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import time
 
-# Erstellen einer großen Liste von Zahlen
+# # Erstellen einer großen Liste von Zahlen
 # data = list(range(1, 1000001))
 
 # # Startzeit messen
@@ -18,9 +18,9 @@ import time
 # print(f"Summe: {total}")
 # print(f"Zeit mit normalem Python: {end_time - start_time} Sekunden")
 
-# PANDAS
+# # PANDAS
 
-# Erstellen einer großen Liste von Zahlen
+# # Erstellen einer großen Liste von Zahlen
 # data = list(range(1, 1000001))
 
 # # Erstellen eines Pandas DataFrame
@@ -54,7 +54,7 @@ data = {
 
 df = pd.DataFrame(data)
 
-df.to_csv("datei.csv", index=False)
+# df.to_csv("datei.csv", index=False)
 df = pd.read_csv("datei.csv")
 
 print(df)
